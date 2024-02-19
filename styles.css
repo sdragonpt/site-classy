@@ -1,0 +1,478 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Cor de fundo cinza quase preta */
+    background-image: linear-gradient(rgba(17, 17, 17, 0.5) 10%, rgba(17, 17, 17, 1) 40%), url('Images/Fundo.png'); /* Gradiente transparente começando a 25% do topo */
+    background-size: contain;
+    background-position: center top -35px;
+    color: #fff; /* Cor do texto branco */
+    font-family: "Brutal Type-ExtraBold";
+}
+
+header {
+    background-color: transparent;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#logo {
+    max-width: 80px; /* Ajuste o tamanho conforme necessário */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+nav a.active {
+    color: #fff; /* Cor do texto para a âncora ativa */
+}
+
+
+#background-image {
+    background-image: url(''); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.box {
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+    margin-bottom: -40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.gradient-button {
+    background: linear-gradient(45deg, #B70020, #FF1D44); /* Ajuste as cores conforme necessário */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-family: 'Brutal Type-Medium', sans-serif;
+}
+
+.gradient-button2 {
+    background: linear-gradient(45deg, #00E200, #009600); /* Ajuste as cores conforme necessário */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 100px;
+    margin-top: -200px;
+    font-family: 'Brutal Type-Medium', sans-serif;
+}
+
+.gradient-button3 {
+    background: linear-gradient(45deg, #B70020, #FF1D44); /* Ajuste as cores conforme necessário */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 100px;
+    margin-top: -200px;
+    font-family: 'Brutal Type-Medium', sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #B70020, #FF1D44); /* Ajuste as cores conforme necessário */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline; /* Alterado para inline */
+    padding-right: 20px; /* Adiciona algum espaço extra ao redor do texto */
+}
+
+.gradient-text2 {
+    background: linear-gradient(15deg, #1A1A1A, #3B3B3B); /* Ajuste as cores conforme necessário */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline; /* Alterado para inline */
+    padding-right: 20px; /* Adiciona algum espaço extra ao redor do texto */
+}
+
+.box {
+    text-align: center;
+    overflow: hidden;
+
+   
+}
+
+.box2{
+    text-align: center;
+    margin-left: 14%;
+    width: 40%;
+    
+}
+
+.box3{
+    text-align: center;
+    
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.indicator-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #777; /* Cor cinza para indicador não ativo */
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.indicator.active {
+    background-color: #fff; /* Cor branca para indicador ativo */
+}
+
+/* Adicione seus estilos aqui, se necessário */
+
+.centered-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.centered-section h2 {
+    font-size: 24px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box4 {
+    width: 350px;
+    text-align: center;
+    margin: 8px;
+    padding: 40px 10px 40px 10px;
+    background: linear-gradient(10deg, #191919, #0E0E0E);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.custom-text-box {
+    /*display: flex;*/
+    position: relative;
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    width: 90%; /* Defina a largura desejada */
+    margin-top: 10px; /* Centraliza a caixa na tela */
+    border: 1px solid #666666;
+    padding: 21px 0px 21px 0px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 10px auto; 
+}
+
+.box-button{
+    width: 90%;
+    padding: 14px;
+    background: linear-gradient(45deg, #00E200, #009600);
+    font-family: "Brutal Type-Medium";
+}
+
+.box-button2{
+    width: 90%;
+    padding: 14px;
+    background: linear-gradient(45deg, #FF1D44, #B70020);
+    font-family: "Brutal Type-Medium";
+}
+
+.custom-text-box p{
+    width: 100px;
+}
+
+.mini-title {
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: "Brutal Type-Medium";
+}
+
+.mini-text {
+    margin-top: -20px;
+    font-family: "Brutal Type-Medium";
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.box-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copy-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+
+
+.image-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    background: url('Images/Fundo2.png'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin-top: 200px;
+}
+
+.image-section h2 {
+    font-size: 24px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    width: calc(100% / 4.5); /* 3 é o número de slides visíveis ao mesmo tempo */
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: left;
+    flex: 0 0 auto; /* Impede que os slides se expandam para ocupar o espaço disponível */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button.prev-button{
+    margin-left: 1280px;
+    position: absolute;
+    top: 214%;
+    font-size: 16px;
+    background: #242424;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    padding: 10px 14px 10px 14px;
+    border-radius: 4px;
+}
+
+button.next-button {
+    margin-right: 160px;
+    position: absolute;
+    top: 214%;
+    font-size: 16px;
+    background: #242424;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    padding: 10px 14px 10px 14px;
+    border-radius: 4px;
+}
+
+.next-button:hover{
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #888;
+}
+
+.prev-button:hover{
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #888;
+}
+
+button.prev-button {
+    left: 0;
+}
+
+button.next-button {
+    right: 0;
+}
+
+.mini-info {
+    display: flex;
+    align-items: center;
+    margin-top: -24px;
+}
+
+.mini-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.mini-info span {
+    margin-left: 10px;
+}
+
+.mini-info p {
+    margin-left: auto;
+    color: #666666;
+}
+
+.footer-section:last-child {
+    margin-left: auto;
+}
+
+.last-section {
+    text-align: right;
+}
+
+.last-section .social-icons {
+    /* Ajuste os estilos conforme necessário para os ícones de mídia social */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.last-section .social-icons img {
+    /* Ajuste os estilos conforme necessário para os ícones de mídia social */
+    width: 40px;
+    margin-left: 10px; /* Adicione algum espaçamento entre os ícones */
+}
+footer {
+    border-top: 1.5px solid #1C1C1C;
+    background: radial-gradient(circle, rgba(36, 36, 36, 0.25), rgba(36, 36, 36, 0)), linear-gradient(rgba(36, 36, 36, 0.12), rgba(36, 36, 36, 0), rgba(36, 36, 36, 0.12));
+    background-color: rgba(10, 10, 10, 1);
+    color: #666;
+    padding: 20px 0;
+}
+
+
+.footer-container {
+    width: 79%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-section {
+    width: 20%; /* Ajuste conforme necessário */
+}
+
+.social-icons img {
+    width: 30px; /* Ajuste conforme necessário */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+hr {
+    width: 79.5%;
+    border-color: #444; /* Cor da linha horizontal */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo{
+    width: 120px;
+}
+
+h4{
+    margin: 10px;
+    color: #666666;
+}
+
+h4:hover{
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+@font-face {
+    font-family: "Brutal Type-ExtraBold";
+    src: url("https://anima-uploads.s3.amazonaws.com/5c55563ec806ca000bc459be/BrutalType-ExtraBold.otf")
+      format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Brutal Type-Bold";
+    src: url("https://anima-uploads.s3.amazonaws.com/5c5463f2a2a48e000abe6f48/BrutalType-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Brutal Type-Medium";
+    src: url("https://anima-uploads.s3.amazonaws.com/5c5463f2a2a48e000abe6f48/BrutalType-Medium.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Brutal Type-Black";
+    src: url("https://anima-uploads.s3.amazonaws.com/5c55563ec806ca000bc459be/BrutalType-Black.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder-BoldLC";
+    src: url("https://anima-uploads.s3.amazonaws.com/projects/62501e32ea279961d222b9ea/fonts/thunder-boldlc.otf")
+      format("opentype");
+  }

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_L.css">
+    <title>Seu Website</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="Images/Logo.png" style="width:80px" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Rewards</a>
+            <a href="#">Videos</a>
+            <a href="#" class="active">Leaderboard</a>
+        </nav>
+    </header>
+
+    <div class="centered-container">
+        <h1 class="title-with-border" style="font-family: Thunder-BoldLC; font-size: 90px;"><i>LEADERBOARD</i></h1>
+        <div class="button-container">
+            <div class="botoes">
+                <a href="leaderboard.html"><button id="button1" class="active" onclick="toggleActive('button1')"><a href="leaderboard.html"></a><img src="Images/BC_logo_2.png" alt="Button 1" style="padding-top: 6px;"></button></a>
+                <a href="leaderboard-roll.html"><button id="button2" onclick="toggleActive('button2')"><img src="Images/Roll_logo.png" alt="Button 2" style="padding-top: 6px;"></button></a>
+            </div>
+        </div>
+
+        <img class="imgV" src="Images/Fundo_Verde.png">
+        <img src="Images/Bola1.png" alt="" class="imgb1">
+        <img src="Images/Bola2.png" alt="" class="imgb2">
+        <!-- Adicionando a div com os cards -->
+        <div class="card-container">
+            <div class="card card1">
+                <img src="Images/BC_logo_3.png" alt="Avatar 1">
+                <div class="card-content">
+                    <h3 style="margin-bottom: 30px;">MADNESS</h3>
+                    <a style="color: #666666; font-family: Brutal Type-Medium;">WAGERED</a>
+                    <p style="margin-top: 2px; font-family: Brutal Type-Medium;"><a style="color: #717171">$</a>96,304.49</p>
+                    <div class="rectangle">
+                        <a style="font-family: Thunder-BoldLC; font-style: italic; font-size: 30px;">$700</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <img src="Images/BC_logo_3.png" alt="Avatar 2">
+                <div class="card-content">
+                    <h3 style="margin-bottom: 30px;">MADNESS</h3>
+                    <a style="color: #666666; font-family: Brutal Type-Medium;">WAGERED</a>
+                    <p style="margin-top: 2px; font-family: Brutal Type-Medium;"><a style="color: #D89C21">$</a>96,304.49</p>
+                    <div class="rectangle">
+                        <a style="font-family: Thunder-BoldLC; font-style: italic; font-size: 30px;">$1,000</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <img src="Images/BC_logo_3.png" alt="Avatar 3">
+                <div class="card-content">
+                    <h3 style="margin-bottom: 30px;">MADNESS</h3>
+                    <a style="color: #666666; font-family: Brutal Type-Medium;">WAGERED</a>
+                    <p style="margin-top: 2px; font-family: Brutal Type-Medium;"><a style="color: #9D4D25">$</a>96,304.49</p>
+                    <div class="rectangle">
+                        <a style="font-family: Thunder-BoldLC; font-style: italic; font-size: 30px;">$500</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha-horizontal">
+        <div class="mini-cards-container">
+          <div class="linha-horizontal-esquerda"></div>
+          <div class="mini-card">
+            <div class="palavra-container">
+              <div class="palavra" style="font-family: Thunder-BoldLC; font-style: italic; font-size: 50px;">6</div>
+              <div class="palavra-abaixo" style="font-family: Brutal Type-Medium; font-style: italic; font-size: 16px; color: #666666">DAYS</div>
+            </div>
+          </div>
+          
+          <div class="mini-card">
+            <div class="palavra-container">
+              <div class="palavra" style="font-family: Thunder-BoldLC; font-style: italic; font-size: 50px;">12</div>
+              <div class="palavra-abaixo" style="font-family: Brutal Type-Medium; font-style: italic; font-size: 16px; color: #666666">HOURS</div>
+            </div>
+          </div>
+          
+          <div class="mini-card">
+            <div class="palavra-container">
+              <div class="palavra" style="font-family: Thunder-BoldLC; font-style: italic; font-size: 50px;">44</div>
+              <div class="palavra-abaixo" style="font-family: Brutal Type-Medium; font-style: italic; font-size: 16px; color: #666666">MINUTES</div>
+            </div>
+          </div>
+          
+          <div class="mini-card">
+            <div class="palavra-container">
+              <div class="palavra" style="font-family: Thunder-BoldLC; font-style: italic; font-size: 50px;">59</div>
+              <div class="palavra-abaixo" style="font-family: Brutal Type-Medium; font-style: italic; font-size: 16px; color: #666666">SECONDS</div>
+            </div>
+          </div>
+          <div class="linha-horizontal-direita"></div>
+        </div>
+    </div>
+
+    <div class="outras-divs-container">
+        <div class="outra-div">
+          <div class="numero-retangulo">#4</div>
+          <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+          <div class="palavra-esquerda">MADNESS</div>
+          <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+          <div class="palavra-direita">$300.00</div>
+        </div>
+      
+        <div class="outra-div">
+          <div class="numero-retangulo">#5</div>
+          <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+          <div class="palavra-esquerda">MADNESS</div>
+          <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+          <div class="palavra-direita">$300.00</div>
+        </div>
+
+        <div class="outra-div">
+            <div class="numero-retangulo">#6</div>
+            <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+            <div class="palavra-esquerda">MADNESS</div>
+            <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+            <div class="palavra-direita">$300.00</div>
+        </div>
+
+        <div class="outra-div">
+            <div class="numero-retangulo">#7</div>
+            <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+            <div class="palavra-esquerda">MADNESS</div>
+            <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+            <div class="palavra-direita">$300.00</div>
+        </div>
+
+        <div class="outra-div">
+            <div class="numero-retangulo">#8</div>
+            <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+            <div class="palavra-esquerda">MADNESS</div>
+            <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+            <div class="palavra-direita">$300.00</div>
+        </div>
+
+        <div class="outra-div">
+            <div class="numero-retangulo">#9</div>
+            <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+            <div class="palavra-esquerda">MADNESS</div>
+            <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+            <div class="palavra-direita">$300.00</div>
+        </div>
+
+        <div class="outra-div">
+            <div class="numero-retangulo">#10</div>
+            <img src="Images/BC_logo_3.png" alt="Imagem Redonda" class="imagem-redonda">
+            <div class="palavra-esquerda">MADNESS</div>
+            <div class="palavra-direita" style="margin-right: -150px; color: #666666;">$50,483</div>
+            <div class="palavra-direita">$300.00</div>
+        </div>
+        
+
+    </div>
+
+    <div class="final">
+        <div class="mini-titulo" style="color: #666666; font-family: Brutal Type-Medium;">End of Leaderboard</div>
+        <div class="mini-texto" style="color: #666666; font-family: Brutal Type-Medium; margin-top: 5px;">Don’t see your name? Wager more and climb to the top!</div>    
+    </div>
+ 
+
+
+    <footer style="margin-top: 100px">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img class="footer-logo" src="Images/Logo.png" alt="Logo">
+                <p style="font-size: 13px" >© Copyrights 2024 CRewards.com</p>
+            </div>
+    
+            <div style="font-size: 18px; margin-left: 30px; " class="footer-section">
+                <a href="#"><h4>Explore</h4></a>
+                <a href="#"><h4>Rewards</h4></a>
+                <a href="#"><h4>Videos</h4></a>
+                <a href="#"><h4>Leaderboard</h4></a>
+            </div>
+    
+            <div style="font-size: 18px" class="footer-section">
+                <a href="#"><h4>About</h4></a>
+                <a href="#"><h4>Contact</h4></a>
+                <a href="#"><h4>FAQ</h4></a>
+                <a href="#"><h4>Terms of Service</h4></a>
+            </div>
+    
+            <div class="footer-section">
+                <div class="social-icons" style="display: flex; justify-content: flex-end; align-items: center;">
+                    <!-- Adicione os logotipos das redes sociais aqui -->
+                    <a href="#"><img style="width: 90%; margin-right: -20px;" src="Images/X.png" alt="X"></a>
+                    <a href="#"><img style="width: 90%; margin-right: -20px;" src="Images/Discord.png" alt="Discord"></a>
+                    <a href="#"><img style="width: 70%; margin: 0 auto;" src="Images/Youtube.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <p style="margin-left: 10.5%; text-align: left; font-size: 12px">18+ | Gamble Responsibly | BeGambleAware. Most people gamble for fun and enjoyment. Do not think of gambling as a way to make money. Only gamble with money you can afford to lose. Set a money and time limit <br> in advance. Never chase your losses. Don't use gambling to distract yourself from everyday problems.</p>
+    </footer>
+
+    <script>
+        // Função para trocar a classe dos botões
+        function toggleActive(buttonId) {
+            // Desativa todos os botões
+            var buttons = document.querySelectorAll('.button-container button');
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+            
+            // Ativa o botão clicado
+            document.getElementById(buttonId).classList.add('active');
+            
+            // Adicione aqui o código que você deseja executar quando um botão é clicado
+        }
+    </script>
+</body>
+</html>
