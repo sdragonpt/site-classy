@@ -313,9 +313,7 @@ img {
 }
 
 button.prev-button{
-    margin-left: 1280px;
-    position: absolute;
-    top: 214%;
+    
     font-size: 16px;
     background: #242424;
     color: #666666;
@@ -323,12 +321,11 @@ button.prev-button{
     cursor: pointer;
     padding: 10px 14px 10px 14px;
     border-radius: 4px;
+    margin-top: 0px;
 }
 
 button.next-button {
-    margin-right: 160px;
-    position: absolute;
-    top: 214%;
+    
     font-size: 16px;
     background: #242424;
     color: #666666;
@@ -336,6 +333,7 @@ button.next-button {
     cursor: pointer;
     padding: 10px 14px 10px 14px;
     border-radius: 4px;
+    margin-top: 0px;
 }
 
 .next-button:hover{
@@ -356,6 +354,7 @@ button.prev-button {
 
 button.next-button {
     right: 0;
+    margin-left: 5px;
 }
 
 .mini-info {
@@ -448,7 +447,16 @@ a{
     text-decoration: none;
 }
 
+.setas-container{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.setas-butoes-container{
+    margin-bottom: 4px;
+}
 
 @font-face {
     font-family: "Brutal Type-ExtraBold";
