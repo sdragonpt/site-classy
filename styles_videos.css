@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Cor de fundo cinza quase preta */
+    background-image: linear-gradient(rgba(17, 17, 17, 0.5) 10%, rgba(17, 17, 17, 1) 70%), url('Images/Fundo.png'); /* Gradiente transparente começando a 25% do topo */
+    background-size: contain;
+    background-position: center top -35px;
+    color: #fff; /* Cor do texto branco */
+    font-family: "Brutal Type-ExtraBold";
+}
+
+.image-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.imgV{
+    position: absolute;
+            top: 0;
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translateZ(-60%); /* Ajusta a posição para o centro */
+            width: 50%;
+            height: auto;
+            z-index: -1; /* Coloca a imagem atrás do conteúdo */
+ }
+
+ .carousel-slides2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide2 {
+    width: calc(100% / 4.5); /* 3 é o número de slides visíveis ao mesmo tempo */
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: left;
+    flex: 0 0 auto; /* Impede que os slides se expandam para ocupar o espaço disponível */
+}
+
+button.prev-button2{
+    
+    font-size: 16px;
+    background: #242424;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    padding: 10px 14px 10px 14px;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+button.next-button2 {
+    
+    font-size: 16px;
+    background: #242424;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    padding: 10px 14px 10px 14px;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+.next-button2:hover{
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #888;
+}
+
+.prev-button2:hover{
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #888;
+}
+
+button.prev-button2 {
+    left: 0;
+}
+
+button.next-button2 {
+    right: 0;
+    margin-left: 5px;
+}

@@ -14,9 +14,9 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">Rewards</a>
-            <a href="#">Videos</a>
-            <a href="#" class="active">Leaderboard</a>
+            <a href="/#rewards">Rewards</a>
+            <a href="videos.html">Videos</a>
+            <a href="leaderboard-roll.html" class="active">Leaderboard</a>
         </nav>
     </header>
 
@@ -204,7 +204,7 @@
                 <a href="#"><h4>About</h4></a>
                 <a href="#"><h4>Contact</h4></a>
                 <a href="#"><h4>FAQ</h4></a>
-                <a href="#"><h4>Terms of Service</h4></a>
+                <a href="privacy.html"><h4>Terms of Service</h4></a>
             </div>
     
             <div class="footer-section">
@@ -222,6 +222,17 @@
         <p style="margin-left: 10.5%; text-align: left; font-size: 12px">18+ | Gamble Responsibly | BeGambleAware. Most people gamble for fun and enjoyment. Do not think of gambling as a way to make money. Only gamble with money you can afford to lose. Set a money and time limit <br> in advance. Never chase your losses. Don't use gambling to distract yourself from everyday problems.</p>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800, // Ajuste esse valor conforme necessário para controlar a velocidade de rolagem
+      speedAsDuration: true,
+      offset: 90, // Ajuste este valor para definir a distância desejada do topo do elemento
+    });
+  });
+</script>
     <script>
         // Função para trocar a classe dos botões
         function toggleActive(buttonId) {
@@ -237,5 +248,6 @@
             // Adicione aqui o código que você deseja executar quando um botão é clicado
         }
     </script>
+    
 </body>
 </html>

@@ -8,16 +8,15 @@
     <title>Seu Website</title>
 </head>
 <body>
-
     <header>
         <div id="logo">
             <img src="Images/Logo.png" style="width:80px" alt="Logo">
         </div>
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Rewards</a>
-            <a href="#">Videos</a>
-            <a href="leaderboard.html">Leaderboard</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="#rewards">Rewards</a>
+            <a href="videos.html" >Videos</a>
+            <a href="leaderboard.html" >Leaderboard</a>
         </nav>
     </header>
 
@@ -50,7 +49,7 @@
 
     <!-- Nova seção -->
     <div class="centered-section">
-        <h1 style="font-family: Thunder-BoldLC; font-size: 90px; margin-bottom: 20px; margin-top: 11%; transform: rotate(-6deg);" ><i class="gradient-text2">REWARDS </i></h1>
+        <h1 id="rewards" style="font-family: Thunder-BoldLC; font-size: 90px; margin-bottom: 20px; margin-top: 11%; transform: rotate(-6deg);" ><i class="gradient-text2">REWARDS </i></h1>
         
         <div class="box-container">
             <div class="box4">
@@ -183,7 +182,7 @@
                 <a href="#"><h4>About</h4></a>
                 <a href="#"><h4>Contact</h4></a>
                 <a href="#"><h4>FAQ</h4></a>
-                <a href="#"><h4>Terms of Service</h4></a>
+                <a href="privacy.html"><h4>Terms of Service</h4></a>
             </div>
     
             <div class="footer-section">
@@ -203,6 +202,16 @@
 
     <script src="script.js"></script>  
     <script src="https://cdn.jsdelivr.net/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800, // Ajuste esse valor conforme necessário para controlar a velocidade de rolagem
+      speedAsDuration: true,
+      offset: 90, // Ajuste este valor para definir a distância desejada do topo do elemento
+    });
+  });
+</script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const prevButton = document.querySelector(".prev-button");
@@ -272,6 +281,6 @@
             }
         });
     </script>
-    
+
 </body>
 </html>
