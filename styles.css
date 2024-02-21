@@ -458,6 +458,16 @@ a{
     margin-bottom: 4px;
 }
 
+.imgVer{
+    position: absolute;
+    top: 0;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-85%); /* Ajusta a posição para o centro */
+    width: 50%;
+    height: auto;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+ }
+
 @font-face {
     font-family: "Brutal Type-ExtraBold";
     src: url("https://anima-uploads.s3.amazonaws.com/5c55563ec806ca000bc459be/BrutalType-ExtraBold.otf")
